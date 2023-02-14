@@ -1,0 +1,173 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    /* border :solid red; */
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.FormBody{
+    width: 33vw;
+    height: 70vh;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;    
+    /* border: solid red; */
+}
+.logo{
+    width: 100%;
+    height: 15%;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+.signin{
+    width: 100%;
+    height: 9%;
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.user{
+    width: 100%;
+    height: 5%;
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.InputBox{
+    width: 100%;
+    height: 25%;
+    /* border: solid red */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 36px;
+}
+.InputEmail{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    /* border: solid blue; */
+    font-size: 16px;
+}
+.InputPassword{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    /* border: solid green; */
+    font-size: 16px;
+}
+.forgot{
+    width: 420px;
+    height: 5%;
+    /* border: solid black; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.forgotemail{
+    width: 60%;
+    height: 100%;
+    /* border: solid green; */
+    font-size: 14px;
+    font-weight: bold;
+    color:#4285F4;
+}
+.forgotpassword{
+    width: 80%;
+    height: 100%;
+    /* border: solid green; */
+    font-size: 14px;
+    font-weight: bold;
+    color:#4285F4;
+    margin-left: 174px;
+}
+.bottomtext{
+    width: 80%;
+    height: 5%;
+    /* border: solid red; */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 15px;
+    color : gray;
+}
+.bottomtext2{
+    width: 20%;
+    height: 5%;
+    /* border: solid green; */
+    font-size: 14px;
+    font-weight: bold;
+    color:#4285F4;
+    margin-left: 50px;
+}
+.CreateAccountLogin{
+    width: 420px;
+    height: 5%;
+    /* border: solid black; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.CreateAccountLink{
+    width: 50%;
+    height: 100%;
+    /* border: solid green; */
+    font-size: 14px;
+    font-weight: bold;
+    color:#4285F4;    
+    margin-top: 10px;
+}
+.LoginButton{
+    width: 20%;
+    height: 150%;
+    border: solid #4285F4;
+    border-radius: 5px;
+    background-color: #4285F4;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    margin-left: 105px;
+}
+.footer{
+    width: 33vw;
+    height: 10vh;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+}
+.language{
+    width: 40%;
+    height: 70%;
+    border:solid white;
+    background-color: transparent;
+}
+.footercontent{
+    width: 60%;
+    height: 70%;
+    /* border:solid green; */
+    font-size: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
