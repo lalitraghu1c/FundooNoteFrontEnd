@@ -1,5 +1,8 @@
 import React from 'react';
 import './SignUp.css';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
 function SignUp(){
     return (
         <>
@@ -14,14 +17,17 @@ function SignUp(){
                     </div>
                     <div className="namebox">
                         <div>
-                            <input className="inputfirstname" placeholder="First Name" />
+                            {/* <input className="inputfirstname" placeholder="First Name" /> */}
+                            <TextField className="inputfirstname" id="outlined-basic" label="First Name" variant="outlined" size="small"/>
                         </div>
                         <div>
-                            <input className="inputlastname" placeholder="Last Name" />
+                            {/* <input className="inputlastname" placeholder="Last Name" /> */}
+                            <TextField className="inputlastname" id="outlined-basic" label="Last Name" variant="outlined" size="small"/>
                         </div>
                     </div>
                     <div className="email">
-                        <input className="inputemail" placeholder="Username" />
+                        {/* <input className="inputemail" placeholder="Username" /> */}
+                        <TextField className="inputemail" id="outlined-basic" label="Username" variant="outlined" size="small"/>
                     </div>
                     <div className="message">
                         You can use letters, numbers & periods
@@ -31,10 +37,12 @@ function SignUp(){
                     </div>
                     <div className="passwordbox">
                         <div>
-                            <input className="password" placeholder="Password" />
+                            {/* <input className="password" placeholder="Password" /> */}
+                            <TextField className="password" id="outlined-basic" label="Password" variant="outlined" size="small"/>
                         </div>
                         <div>
-                            <input className="confirm" placeholder="Confirm" />
+                            {/* <input className="confirm" placeholder="Confirm" /> */}
+                            <TextField className="confirm" id="outlined-basic" label="Confirm" variant="outlined" size="small"/>
                         </div>
                     </div>
                     <div className="bottommessage">
@@ -46,7 +54,8 @@ function SignUp(){
                     <div className="SignInAccount">
                         <a className="SignInAccountLink">Sign in instead</a>
                         <div className='next'>
-                            <button className="LoginButton">Next</button>
+                            {/* <button className="LoginButton">Next</button> */}
+                            <button className="LoginButton" variant="contained">Next</button>
                         </div>
                     </div>
                 </form>

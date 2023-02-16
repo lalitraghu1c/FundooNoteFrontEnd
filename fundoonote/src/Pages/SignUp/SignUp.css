@@ -39,30 +39,32 @@
     margin-left: 35px;
 }
 .namebox{
-    width: 100%;
+    width: 90%;
     height: 10%;
     /* border: solid green; */
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 .inputfirstname{
-    width: 110%;
+    width: 90%;
     height: 60%;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
 }
 .inputlastname{
-    width: 100%;
+    width: 90%;
     height: 60%;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
     margin-left: 25px;
 }
 .email{
-    width: 90%;
-    height: 6%;
+    width: 103%;
+    height: 7%;
+    margin-left: -5px;
+    /* border: solid blue; */
 }
 .inputemail{
     width: 83%;
@@ -96,16 +98,16 @@
     display: flex;
     flex-direction: row;
     margin-top: 25px;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 .password{
-    width: 110%;
+    width: 90%;
     height: 60%;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
 }
 .confirm{
-    width: 100%;
+    width: 90%;
     height: 60%;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
@@ -157,7 +159,7 @@
     font-weight: bold;
     color:white;
     margin-top: -5px;
-    margin-left: 90px;
+    margin-left: 118px;
 }
 .rightcontainer{
     width: 40%;
@@ -169,12 +171,14 @@
 }
 .imagebox{
     width: 80%;
-    /* border: solid blue; */   
+    /* border: solid blue; */
+    margin-left: 10px; 
 }
 .msg{
-    width: 75%;
+    width: 85%;
     height: 10%;
     /* border: solid red; */
+    color: gray;
     text-align: center;
 }
 .footer{
@@ -198,6 +202,7 @@
     height: 70%;
     /* border:solid green; */
     font-size: 14px;
+    color: gray;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
