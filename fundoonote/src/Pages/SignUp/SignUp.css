@@ -1,6 +1,6 @@
 .maincontainer{
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     /* border :solid red;     */
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
 }
 .middlesec{
     width: 50vw;
-    height: 80vh;
+    height: 75vh;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     display: flex;
@@ -25,8 +25,8 @@
     width: 30%;
     height: 5%;
     /* border: solid red; */
-    margin-top: 35px;
-    margin-left: 30px;
+    margin-top: 48px;
+    margin-left: 8px;
 }
 .createaccount{
     width: 70%;
@@ -35,6 +35,7 @@
     display: flex;
     align-items: center;
     font-size: 22px;
+    margin-top: -5px;
     margin-left: 35px;
 }
 .namebox{
@@ -68,14 +69,14 @@
     height: 100%;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
-    margin-left: 35px;
+    margin-left: 5px;
 }
 .message{
     width: 83%;
     height: 5%;
     /* border: solid blue; */
     font-size: 12px;
-    margin-left: 40px;
+    margin-left: -50px;
     margin-top: 7px;
     color : rgb(116, 115, 115);
 }
@@ -85,8 +86,8 @@
     font-size: 14px;
     font-weight: bold;
     color:#4285F4;
-    /* border: solid red */
-    margin-left: 35px;
+    /* border: solid red; */
+    margin-left: 20px;
 }
 .passwordbox{
     width: 100%;
@@ -94,7 +95,7 @@
     /* border: solid green; */
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 35px;
 }
 .password{
@@ -116,26 +117,28 @@
     /* border: solid yellow; */
     font-size: 12px;
     margin-left: 40px;
-    margin-top: 7px;
+    margin-top: -15px;
+    text-align: start;
     color : rgb(116, 115, 115);
 }
 .checkbox{
     width: 70%;
     height: 5%;
     /* border: solid yellow; */
-    margin-left: 30px;
+    margin-left: -65px;
     margin-top: 10px;
 }
-.CreateAccountLogin{
+.SignInAccount{
     width: 350px;
     height: 5%;
     /* border: solid black; */
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 35px;
+    text-align: start;
 }
-.CreateAccountLink{
+.SignInAccountLink{
     width: 50%;
     height: 100%;
     /* border: solid green; */
@@ -153,7 +156,8 @@
     font-size: 15px;
     font-weight: bold;
     color:white;
-    margin-left: 95px;
+    margin-top: -5px;
+    margin-left: 90px;
 }
 .rightcontainer{
     width: 40%;

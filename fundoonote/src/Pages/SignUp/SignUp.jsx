@@ -1,3 +1,4 @@
+import React from 'react';
 import './SignUp.css';
 function SignUp(){
     return (
@@ -42,8 +43,8 @@ function SignUp(){
                     <div className='checkbox'>
                         <input type= 'checkbox' value='Show Password' name = 'Show Password' /> <label>Show Pasword</label>
                     </div>
-                    <div className="CreateAccountLogin">
-                        <a className="CreateAccountLink">Sign in instead</a>
+                    <div className="SignInAccount">
+                        <a className="SignInAccountLink">Sign in instead</a>
                         <div className='next'>
                             <button className="LoginButton">Next</button>
                         </div>
