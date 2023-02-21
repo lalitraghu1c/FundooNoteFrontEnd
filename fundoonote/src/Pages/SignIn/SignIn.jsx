@@ -51,6 +51,7 @@ function SignIn() {
                 SignInApi(userDetail)
                 .then(response => {
                     console.log(response)
+                    localStorage.setItem("token",response.data.data)
                 })
                 .catch(error => {
                     console.log(error)

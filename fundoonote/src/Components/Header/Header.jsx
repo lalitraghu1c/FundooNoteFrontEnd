@@ -13,34 +13,32 @@ import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 function Header() {
 
     return (
-        <div className="outermainbox">
-            <div className='header-box'>
-                <div className='inner-header'>
-                    <div className='main-menu'>
-                        <Button  variant="text" color="inherit"><MenuIcon /></Button>   
+        <div className='header-box'>
+            <div className='inner-header'>
+                <div className='main-menu'>
+                    <Button variant="text" color="inherit"><MenuIcon /></Button>
+                </div>
+                <div className='keeplogo'>
+                    <img className='keepimg' src='https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png' alt="Google Keep Logo" />
+                    <a className='keep-txt' href=''> Google Keep</a>
+                </div>
+                <div className='searchBar'>
+                    <div className='icon-search'><SearchIcon fontSize="medium" color="action" /></div>
+                    <div className='inner-search'><InputBase placeholder="Search" /></div>
+                </div>
+                <div className='five-icons'>
+                    <div className='ref-set-icon'>
+                        <Button variant="text" color="inherit" size="small"><RefreshIcon size="small" /></Button>
+                        <Button variant="text" color="inherit"><ViewAgendaOutlinedIcon /></Button>
+                        <Button variant="text" color="inherit"><SettingsIcon /> </Button>
                     </div>
-                    <div className='keeplogo'>
-                        <img className='keepimg' src='https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png' alt="Signup Logo"/>
-                        <a className='keep-txt' href=''>Keep</a>
-                    </div>
-                    <div className='searchBar'>
-                        <div className='icon-search'><SearchIcon fontSize="medium" color="action" /></div>
-                        <div className='inner-search'><InputBase placeholder="Search" /></div>
-                    </div>
-                    <div className='five-icons'>
-                        <div className='ref-set-icon'>
-                            <Button variant="text" color="inherit" size="small"><RefreshIcon size="small" /></Button> 
-                            <Button variant="text" color="inherit"><ViewAgendaOutlinedIcon /></Button> 
-                            <Button variant="text" color="inherit"><SettingsIcon /> </Button>                  
-                        </div>
-                        <div className='app-acc-icon'>
-                            <Button color="inherit"><AppsIcon /></Button>
-                            <Button variant="text" color="inherit"><AccountCircleRoundedIcon /></Button>
-                        </div>
+                    <div className='app-acc-icon'>
+                        <Button color="inherit"><AppsIcon /></Button>
+                        <Button variant="text" color="inherit"><AccountCircleRoundedIcon /></Button>
                     </div>
                 </div>
-            </div >
-        </div>
+            </div>
+        </div >
     )
 }
 export default Header;

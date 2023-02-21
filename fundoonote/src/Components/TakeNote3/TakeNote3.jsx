@@ -12,7 +12,7 @@ import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 
 function TakeNote3() {
     return (
-        <div className="note3maincontainer">
+        <div className="maincontainer3">
             <div className="title3">
                 <div className="input3">
                     <InputBase placeholder='Title' />
@@ -21,7 +21,7 @@ function TakeNote3() {
                     <PushPinOutlinedIcon />
                 </div>
             </div>
-            <div className="takenote">
+            <div className="takenote3">
                 <InputBase placeholder='Take a note...' />
             </div>
             <div className="bottomicon3">

@@ -1,4 +1,4 @@
-.noteonemaincontainer{
+.maincontainer1{
     width: 45vw;
     height: 7.5vh;
     border: 1px solid #e0e0e0;
@@ -17,7 +17,7 @@
     font-weight: 400;
     font-family: Roboto,Arial,sans-serif;
     display: flex;
-    align-self: flex-start;
+    align-self: start;
 }
 .sidenavigation1{
     width: 25%;

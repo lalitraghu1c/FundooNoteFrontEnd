@@ -7,9 +7,12 @@ import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
 import { InputBase } from '@mui/material';
 
 
-function TakeNote1() {
+function TakeNote1(props) {
+    const Submit = () => {
+        props.ListenToTakeNote1()
+    }
     return (
-        <div className="noteonemaincontainer">
+        <div onClick={Submit} className="maincontainer1">
             <div className="takenote1">
                 <InputBase placeholder='Take a note...' /></div>
             <div className="sidenavigation1">

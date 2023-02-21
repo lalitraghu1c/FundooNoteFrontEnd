@@ -14,20 +14,20 @@ import RedoOutlinedIcon from '@mui/icons-material/RedoOutlined';
 
 function TakeNote2() {
   return (
-    <div className="note2maincontainer">
-        <div className="title">
-            <div className="input">
+    <div className="maincontainer2">
+        <div className="title2">
+            <div className="input2">
                 <InputBase placeholder='Title'/>
             </div>
-            <div className="labelicon">
+            <div className="labelicon2">
             <PushPinOutlinedIcon/>
             </div>
         </div>
         <div className="takenote2">
         <InputBase placeholder='Take a note...'/>
         </div>
-        <div className="bottomicon">
-            <div className="note2icon">
+        <div className="bottomicon2">
+            <div className="noteicon2">
             <Button> <AddAlertOutlinedIcon style={{ color: '#202124' }} fontSize="small"/> </Button>
             <Button> <PersonAddAltOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
             <Button> <ColorLensOutlinedIcon style={{ color: "#202124" }} fontSize="small"/> </Button>
@@ -37,8 +37,8 @@ function TakeNote2() {
             <Button> <UndoOutlinedIcon  style={{ color: "#202124" }} fontSize="small"/> </Button>
             <Button> <RedoOutlinedIcon  style={{ color: "#202124" }} fontSize="small"/> </Button>
             </div>
-            <div className="icontext">
-                <Button style={{ color: "#202124"}}  >Close</Button>
+            <div className="icontext2">
+                <Button style={{ color: "#202124"}}>CLOSE</Button>
             </div>
         </div>
     </div>

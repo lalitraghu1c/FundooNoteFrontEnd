@@ -1,15 +1,10 @@
-.outermainbox{
-    width: 100vw;
-    height: 100vh;
-    border: solid red;
-}
 .header-box{
     height: 10vh;
     width:100vw;
     border: 1px solid rgb(199, 194, 194);
     background-color: #fff;
     color: black;
-    /* border: solid green; */
+    border: solid green;
     display: flex;
     flex-direction: row;
     align-items: center;
