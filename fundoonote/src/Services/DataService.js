@@ -15,3 +15,8 @@ export const createNewNoteApi = (data) => {
     let response= axios.post(`${baseUrl}/NoteRegistration`, data, HeaderConfig)
     return response
 }
+
+export const NoteArchieveApi = (data) => {
+    let response = axios.put(`${baseUrl}/ArchieveNote`, data, HeaderConfig)
+    return response
+}

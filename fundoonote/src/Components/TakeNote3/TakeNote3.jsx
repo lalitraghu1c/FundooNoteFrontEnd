@@ -9,8 +9,25 @@ import ColorLensOutlinedIcon from '@mui/icons-material/ColorLensOutlined';
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 import { Delete } from '@mui/icons-material';
+import { NoteArchieveApi } from '../../Services/DataService';
+
 
 function TakeNote3(props) {
+
+    const NoteArchieve = (id) => {
+        let nId = {
+          "noteID": id
+        }
+    
+        NoteArchieveApi(nId)
+          .then(res => {
+            console.log(res)
+          })
+          .catch(err => {
+            console.log(err)
+          })
+      }
+
     return (
         <div className="maincontainer3">
             <div className="title3">
@@ -29,7 +46,7 @@ function TakeNote3(props) {
                 <Button> <PersonAddAltOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
                 <Button> <ColorLensOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
                 <Button> <Delete style={{ color: "#202124" }} fontSize="" /> </Button>
-                <Button> <ArchiveOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
+                <ArchiveOutlinedIcon onClick={() => NoteArchieve(props.note.noteID)} style={{ color: '#202124' }} fontSize="small" />
                 <Button> <MoreVertOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
             </div>
         </div>
