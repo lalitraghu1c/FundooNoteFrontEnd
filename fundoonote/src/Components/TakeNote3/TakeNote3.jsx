@@ -6,9 +6,9 @@ import Button from '@mui/material/Button';
 import AddAlertOutlinedIcon from '@mui/icons-material/AddAlertOutlined';
 import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
 import ColorLensOutlinedIcon from '@mui/icons-material/ColorLensOutlined';
-import AddPhotoAlternateOutlinedIcon from '@mui/icons-material/AddPhotoAlternateOutlined';
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import { Delete } from '@mui/icons-material';
 
 function TakeNote3(props) {
     return (
@@ -28,7 +28,7 @@ function TakeNote3(props) {
                 <Button> <AddAlertOutlinedIcon style={{ color: '#202124' }} fontSize="" /> </Button>
                 <Button> <PersonAddAltOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
                 <Button> <ColorLensOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
-                <Button> <AddPhotoAlternateOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
+                <Button> <Delete style={{ color: "#202124" }} fontSize="" /> </Button>
                 <Button> <ArchiveOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
                 <Button> <MoreVertOutlinedIcon style={{ color: "#202124" }} fontSize="" /> </Button>
             </div>

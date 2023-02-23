@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Header/Header.css"
+import { Button, IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
-import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 import RefreshIcon from '@mui/icons-material/Refresh';
