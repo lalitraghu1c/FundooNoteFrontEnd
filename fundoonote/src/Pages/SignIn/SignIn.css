@@ -1,10 +1,10 @@
-body{
+.body{
     width: 100vw;
     height: 100vh;
     /* border :solid red; */
     font-family: sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -153,6 +153,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 4px;
+    margin-left: 50px;
 }
 .language1{
     width: 40%;

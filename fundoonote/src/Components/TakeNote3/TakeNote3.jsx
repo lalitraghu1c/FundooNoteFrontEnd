@@ -10,19 +10,19 @@ import AddPhotoAlternateOutlinedIcon from '@mui/icons-material/AddPhotoAlternate
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 
-function TakeNote3() {
+function TakeNote3(props) {
     return (
         <div className="maincontainer3">
             <div className="title3">
                 <div className="input3">
-                    <InputBase placeholder='Title' />
+                    {props.note.title}
                 </div>
                 <div className="labelicon3">
                     <PushPinOutlinedIcon />
                 </div>
             </div>
             <div className="takenote3">
-                <InputBase placeholder='Take a note...' />
+                    {props.note.note}
             </div>
             <div className="bottomicon3">
                 <Button> <AddAlertOutlinedIcon style={{ color: '#202124' }} fontSize="" /> </Button>

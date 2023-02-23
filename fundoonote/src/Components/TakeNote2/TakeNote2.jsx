@@ -12,7 +12,10 @@ import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 import UndoOutlinedIcon from '@mui/icons-material/UndoOutlined';
 import RedoOutlinedIcon from '@mui/icons-material/RedoOutlined';
 
-function TakeNote2() {
+function TakeNote2(props) {
+    const Submit = () => {
+        props.ListenToTakeNote2()
+    }
   return (
     <div className="maincontainer2">
         <div className="title2">
@@ -38,7 +41,7 @@ function TakeNote2() {
             <Button> <RedoOutlinedIcon  style={{ color: "#202124" }} fontSize="small"/> </Button>
             </div>
             <div className="icontext2">
-                <Button style={{ color: "#202124"}}>CLOSE</Button>
+                <Button onClick={Submit} style={{ color: "#202124"}}>CLOSE</Button>
             </div>
         </div>
     </div>
