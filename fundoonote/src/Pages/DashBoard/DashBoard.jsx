@@ -17,7 +17,7 @@ function DashBoard() {
         setSwitch(false)
     }
 
-    useEffect(() => {
+    const getListMethod = () => {
         getListApi()
             .then(response => {
                 console.log(response)
@@ -26,6 +26,14 @@ function DashBoard() {
             .catch(error => {
                 console.log(error)
             })
+    }
+
+    const autoRefresh = () => {
+        getListMethod()
+    }
+
+    useEffect(() => {
+        getListMethod()
     }, [])
     console.log(DataList)
 
@@ -34,12 +42,12 @@ function DashBoard() {
             <div>
                 <Header />
                 {
-                    Switch ? <TakeNote2 ListenToTakeNote2={ListenToTakeNote2}/> : <TakeNote1  ListenToTakeNote1={ListenToTakeNote1} />
+                    Switch ? <TakeNote2 ListenToTakeNote2={ListenToTakeNote2} autoRefresh={autoRefresh} /> : <TakeNote1 ListenToTakeNote1={ListenToTakeNote1}/>
                 }
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap', width: '65vw', position: 'relative', left:'20%'}}>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: 'wrap', width: '65vw', position: 'relative', left: '20%' }}>
                     {
                         DataList.map(note => (
-                            <TakeNote3 note={note} />
+                            <TakeNote3 note={note} autoRefresh={autoRefresh} />
                         ))
                     }
                 </div>
