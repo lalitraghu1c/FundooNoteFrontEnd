@@ -108,7 +108,7 @@ function SignIn() {
                     </div>
                     <div className="bottomtext2">Learn more.</div>
                     <div className="CreateAccountLogin">
-                        <a className="CreateAccountLink">Create Account</a>
+                        <a onClick={() => navigate('./SignUp')} className="CreateAccountLink">Create Account</a>
                         {/* <button className="LoginButton1">Next</button> */}
                         <Button onClick={Submit} className="LoginButton1" variant="contained">Next</Button>
                     </div>

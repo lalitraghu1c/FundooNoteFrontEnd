@@ -1,6 +1,6 @@
 .maincontainer2{
-    width: 45vw;
-    height: 20vh;
+    width: 42vw;
+    height: 18vh;
     border: 1px solid #e0e0e0;
     background-color: #fff;
     box-shadow: 3px 3px 3px 2px rgb(0 0 0 / 10%);
@@ -39,10 +39,12 @@
     justify-content: space-between;
 }
 .noteicon2{
-    width: 80%;
+    width: 60%;
     height: 95%;
     /* border : solid pink; */
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 .icontext2{

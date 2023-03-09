@@ -24,12 +24,24 @@ export const NoteArchieveApi = (data) => {
 export const NoteTrashApi = (data) => {
     console.log(data)
     console.log(HeaderConfig)
-    let response= axios.delete(`${baseUrl}/TrashNote`, data ,HeaderConfig)
+    let response= axios.put(`${baseUrl}/TrashNote`, data ,HeaderConfig)
     return response
 }
-
+    
 export const NotePinApi = (data) => {
     console.log(data)
     let response= axios.put(`${baseUrl}/PinNote`, data ,HeaderConfig)
+    return response
+}
+
+export const NoteColorApi = (data) => {
+    console.log(data)
+    let response= axios.put(`${baseUrl}/BackgroundColor`, data ,HeaderConfig)
+    return response
+}
+
+export const NoteUpdateApi = (data,noteID) => {
+    console.log(data)
+    let response= axios.put(`${baseUrl}/NoteUpdate?NoteID=${noteID}`, data ,HeaderConfig)
     return response
 }

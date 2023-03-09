@@ -12,10 +12,11 @@ import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 import UndoOutlinedIcon from '@mui/icons-material/UndoOutlined';
 import RedoOutlinedIcon from '@mui/icons-material/RedoOutlined';
 import { createNewNoteApi } from '../../Services/DataService';
+import ColorPopper from '../ColorPopper/ColorPopper';
 
 
 function TakeNote2(props) {
-    const [noteData, setNoteData] = useState({ title: '', note: '' })
+    const [noteData, setNoteData] = useState({ title: '', note: '', color:'' })
     const Submit = () => {
         props.ListenToTakeNote2()
 
@@ -32,7 +33,6 @@ function TakeNote2(props) {
         }
     }
 
-
     const TakeNote2Title = (e) => {
         setNoteData(preState => ({ ...preState, title: e.target.value }))
     }
@@ -41,11 +41,15 @@ function TakeNote2(props) {
         setNoteData(preState => ({ ...preState, note: e.target.value }))
     }
 
+    const listenToColorPopper1 = (popperColor) => {
+        setNoteData(preState => ({ ...preState, color: popperColor}))
+    }
+    
     return (
-        <div className="maincontainer2">
+        <div style={{ backgroundColor: noteData.color }} className="maincontainer2">
             <div className="title2">
                 <div className="input2">
-                <InputBase onChange={TakeNote2Title} placeholder='Title' />
+                    <InputBase onChange={TakeNote2Title} placeholder='Title' />
                 </div>
                 <div className="labelicon2">
                     <PushPinOutlinedIcon />
@@ -56,14 +60,14 @@ function TakeNote2(props) {
             </div>
             <div className="bottomicon2">
                 <div className="noteicon2">
-                    <Button> <AddAlertOutlinedIcon style={{ color: '#202124' }} fontSize="small" /> </Button>
-                    <Button> <PersonAddAltOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
-                    <Button> <ColorLensOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
-                    <Button> <AddPhotoAlternateOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
-                    <Button> <ArchiveOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
-                    <Button> <MoreVertOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
-                    <Button> <UndoOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
-                    <Button> <RedoOutlinedIcon style={{ color: "#202124" }} fontSize="small" /> </Button>
+                    <AddAlertOutlinedIcon style={{ color: '#202124' }} fontSize="small" />
+                    <PersonAddAltOutlinedIcon style={{ color: "#202124" }} fontSize="small" />
+                    <ColorPopper listenToColorPopper1={listenToColorPopper1} action="create" />
+                    <AddPhotoAlternateOutlinedIcon style={{ color: "#202124" }} fontSize="small" />
+                    <ArchiveOutlinedIcon style={{ color: "#202124" }} fontSize="small" />
+                    <MoreVertOutlinedIcon style={{ color: "#202124" }} fontSize="small" />
+                    <UndoOutlinedIcon style={{ color: "#202124" }} fontSize="small  " />
+                    <RedoOutlinedIcon style={{ color: "#202124" }} fontSize="small" />
                 </div>
                 <div className="icontext2">
                     <Button onClick={Submit} sx={{ textTransform: 'none' }} style={{ color: "#202124" }}>CLOSE</Button>

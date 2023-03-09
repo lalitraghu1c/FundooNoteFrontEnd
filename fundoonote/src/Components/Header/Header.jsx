@@ -10,13 +10,15 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 
-function Header() {
-
+function Header(props) {
+    const menuOpen=()=>{
+        props.headerPart()
+    }
     return (
         <div className='header-box'>
             <div className='inner-header'>
                 <div className='main-menu'>
-                    <Button variant="text" color="inherit"><MenuIcon /></Button>
+                    <Button color="inherit" onClick={menuOpen}><MenuIcon /></Button>
                 </div>
                 <div className='keeplogo'>
                     <img className='keepimg' src='https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png' alt="Google Keep Logo" />

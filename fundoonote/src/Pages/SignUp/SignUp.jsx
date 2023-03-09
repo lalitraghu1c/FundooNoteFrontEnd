@@ -16,6 +16,8 @@ function SignUp(){
         confirmPassword: ''
     });
 
+
+
     const InputFirstName = (event) => {
         setUserSignup(preState => ({ ...preState, firstName: event.target.value }))
     }

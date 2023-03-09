@@ -8,6 +8,7 @@ import TakeNote2 from './Components/TakeNote2/TakeNote2';
 import TakeNote3 from './Components/TakeNote3/TakeNote3';
 import DashBoard from './Pages/DashBoard/DashBoard';
 import Router1 from './Router/Router1';
+import MiniDrawer from './Components/Drawer/Drawer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <TakeNote3 /> */}
       {/* <DashBoard /> */}
       <Router1 />
+      {/* <MiniDrawer /> */}
     </div>
   );
 }

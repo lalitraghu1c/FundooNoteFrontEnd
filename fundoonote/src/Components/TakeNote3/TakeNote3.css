@@ -1,5 +1,5 @@
 .maincontainer3{
-    width: 25vw;
+    width: 20vw;
     height: 20vh;
     border: 1px solid #e0e0e0;
     background-color: #fff;
@@ -11,6 +11,7 @@
     align-items: center;
     position: relative;
     top: 90px;
+    
 }
 .title3{
     width: 95%;
@@ -30,7 +31,11 @@
     justify-content: flex-start;
 }
 .bottomicon3{
-    width: 100%;
+    width: 90%;
     height: 15%;
     /* border : solid green; */
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
 }
