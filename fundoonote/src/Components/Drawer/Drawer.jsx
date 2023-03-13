@@ -13,6 +13,8 @@ import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import { connect } from 'react-redux'
+
 
 const drawerWidth = 260;
 
@@ -51,7 +53,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function MiniDrawer(props) {
+function MiniDrawer(props) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -61,6 +63,9 @@ export default function MiniDrawer(props) {
 
   const setText = (label) => {
     props.selectText(label)
+    props.dispatch({
+      type: `${label}` //send action
+    })
   }
 
   return (
@@ -69,7 +74,7 @@ export default function MiniDrawer(props) {
       <Drawer variant="permanent" open={props.headerState}>
 
         <List>
-          <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>setText("Notes")}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => setText("Notes")}>
             <ListItemButton style={{ paddingLeft: 10, height: 50 }}>
               <IconButton size='large' style={{ marginRight: 15 }}>
                 <LightbulbOutlinedIcon />
@@ -78,7 +83,7 @@ export default function MiniDrawer(props) {
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding sx={{ display: 'block' }}onClick={()=>setText("Remainder")}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => setText("Remainder")}>
             <ListItemButton style={{ paddingLeft: 10, height: 50 }}>
               <IconButton size='large' style={{ marginRight: 15 }}>
                 <NotificationsOutlinedIcon />
@@ -87,7 +92,7 @@ export default function MiniDrawer(props) {
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding sx={{ display: 'block' }}onClick={()=>setText("Edit")}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => setText("Edit")}>
             <ListItemButton style={{ paddingLeft: 10, height: 50 }}>
               <IconButton size='large' style={{ marginRight: 15 }}>
                 <EditOutlinedIcon />
@@ -96,7 +101,7 @@ export default function MiniDrawer(props) {
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding sx={{ display: 'block' }}onClick={()=>setText("Archive")}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => setText("Archive")}>
             <ListItemButton style={{ paddingLeft: 10, height: 50 }}>
               <IconButton size='large' style={{ marginRight: 15 }}>
                 <ArchiveOutlinedIcon />
@@ -105,7 +110,7 @@ export default function MiniDrawer(props) {
             </ListItemButton>
           </ListItem>
 
-          <ListItem disablePadding sx={{ display: 'block' }}onClick={()=>setText("Trash")}>
+          <ListItem disablePadding sx={{ display: 'block' }} onClick={() => setText("Trash")}>
             <ListItemButton style={{ paddingLeft: 10, height: 50 }}>
               <IconButton size='large' style={{ marginRight: 15 }}>
                 <DeleteOutlinedIcon />
@@ -118,3 +123,5 @@ export default function MiniDrawer(props) {
     </Box>
   );
 }
+
+export default connect() (MiniDrawer) 

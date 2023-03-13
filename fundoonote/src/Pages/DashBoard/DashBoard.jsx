@@ -30,7 +30,7 @@ function DashBoard() {
                 if (newBar === "Notes") {
                     // noteArray = response.data.data;
                     noteArray = response.data.data.filter((note) => {
-                        if (note.archive === false && note.trash == false) {
+                        if (note.archive === false && note.trash == false ) {
                             return note;
                         }
                     })

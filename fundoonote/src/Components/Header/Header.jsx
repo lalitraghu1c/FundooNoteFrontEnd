@@ -9,6 +9,8 @@ import ViewAgendaOutlinedIcon from '@mui/icons-material/ViewAgendaOutlined';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
+import { connect } from 'react-redux' //HOC
+
 
 function Header(props) {
     const menuOpen=()=>{
@@ -22,7 +24,7 @@ function Header(props) {
                 </div>
                 <div className='keeplogo'>
                     <img className='keepimg' src='https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png' alt="Google Keep Logo" />
-                    <a className='keep-txt' href=''> Google Keep</a>
+                    <a className='keep-txt' href=''>{props.label}</a>
                 </div>
                 <div className='searchBar'>
                     <div className='icon-search'><SearchIcon fontSize="medium" color="action" /></div>
@@ -43,4 +45,11 @@ function Header(props) {
         </div >
     )
 }
-export default Header;
+const mapStateToProps = (state) => {
+    console.log(state)
+    return{
+        label : state.DrawerReducer.title //stores in label
+    }
+}
+
+export default connect (mapStateToProps) (Header)
